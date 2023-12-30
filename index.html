@@ -6,11 +6,39 @@
         <title>Lintee12 | Home</title>
         <meta name="description" content="My github home page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <meta name="og:title" content="Lintee12 | Home">
+        <meta name="og:type" content="people">
+        <meta name="og:description" content="My github home page">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <link rel="stylesheet" type="text/css" href="bin/css/styles.css">
+        <script src="bin/js/main.js"></script>
     </head>
     <body>
-        <a href="./drawing-app">Drawing App</a>
-        <a href="./chess">Chess</a>
-        <a href="./solitaire">Solitaire</a>
+        <header>
+            <nav class="main-header-nav">
+                <ul class="main-header-list">
+                    <li class="main-header-list-item"><a href="/index.html">Home</a></li>
+                    <li class="main-header-list-item"><a href="/about.html">About</a></li>
+                    <li class="main-header-list-item"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <div class="container-main column">
+                <div class="fill text-center"><h1>My Projects</h1></div>
+                <a class="project column" href="/drawing-app" draggable="false" target="_blank">
+                    <h2>Drawing app</h2>
+                    <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
+                </a>
+                <a class="project column" href="/solitaire" draggable="false" target="_blank">
+                    <h2>Solitaire</h2>
+                    <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
+                </a>
+                <a class="project column" href="/chess" draggable="false" target="_blank">
+                    <h2>Chess</h2>
+                    <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
+                </a>
+            </div>
+        </main>
     </body>
 </html>
