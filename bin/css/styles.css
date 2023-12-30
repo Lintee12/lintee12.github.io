@@ -1,12 +1,13 @@
 html,
 body {
     font-family: sans-serif;
-    background: rgb(15,6,23);
-    background: -moz-radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%);
-    background: radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0617",endColorstr="#000000",GradientType=1);
+    background: rgb(15,6,23) !important;
+    background: -moz-radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%)!important;
+    background: -webkit-radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%) !important;
+    background: radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0617",endColorstr="#000000",GradientType=1) !important;
     color: white;
+    filter: contrast(.98);
 }
 
 * {
@@ -25,12 +26,12 @@ body {
     margin: 20px 100px;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.46);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(12, 12, 12, 0.46) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(9.1px) !important;
+    -webkit-backdrop-filter: blur(9.1px) !important;
+    border: 1px solid rgba(0, 0, 0, 1) !important;
 }
 
 h1 {
@@ -67,7 +68,7 @@ p {
     display: flex;
     gap: 20px;
     width: fit-content;
-    background: rgba(0, 0, 0, 0.46);
+    background: rgba(37, 37, 37, 0.46);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.1px);
