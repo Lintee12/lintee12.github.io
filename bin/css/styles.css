@@ -1,5 +1,6 @@
 html,
 body {
+    background-color: rgb(15,6,23);
     font-family: sans-serif;
     background: rgb(15,6,23) !important;
     background: -moz-radial-gradient(circle, rgba(15,6,23,1) 15%, rgba(0,0,0,1) 100%)!important;
