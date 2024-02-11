@@ -131,20 +131,37 @@ p {
     color: rgb(59, 127, 255);
 }
 
+.styled-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.styled-list li {
+    display: flex;
+    align-items: center;
+}
+
+.styled-list li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
 #about-me {
     max-width: 522px;
 }
 
 #nb {
     height: 100%;
-    min-height: 240px;
-    max-height: 240px;
+    min-height: 222px;
+    max-height: 222px;
     width: 100%;
     background-image: url("https://www.discover-the-world.com/app/uploads/2022/03/canada-new-brunswick-point-wolfe-river-istk-1440x0-c-default.jpg");
     background-size: cover;
     background-position: 0px -20px;
     background-repeat: no-repeat;
-    filter: brightness(0.6)
+    filter: brightness(0.6);
+    border-radius: 10px;
 }
 
 .form-control {
@@ -204,6 +221,22 @@ p {
 .form-control button:active {
     background-color: rgb(88, 24, 148);
     scale: 1.05;
+}
+
+.flex-align-center img {
+    transform: translateY(2px);
+}
+
+@media all and (min-width: 1900px) {
+    main {
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 1345px) {
+    main {
+        justify-content: center;
+    }
 }
 
 @media all and (max-width: 600px) {
