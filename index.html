@@ -17,39 +17,21 @@
     <body style="filter: brightness(1.4); scroll-behavior: smooth;">
         <header>
             <nav class="main-header-nav">
-                <ul class="main-header-list">
-                    <li class="main-header-list-item"><a href="./index.html">Home</a></li>
+                <ul class="main-header-list" style="width: 100%;">
+                    <li class="main-header-list-item" style="margin-right: auto;"><a href="./index.html">Home</a></li>
+                    <li class="main-header-list-item"><a href="#projects">Projects</a></li>
                     <li class="main-header-list-item"><a href="#about-me">About</a></li>
                     <li class="main-header-list-item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav> 
         </header>
-        <main style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div class="container-main column">
-                <div class="fill"><h1>My Projects</h1></div>
-                <a class="project column" href="/drawing-app" draggable="false" target="_blank">
-                    <h2>Drawing app</h2>
-                    <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
-                </a>
-                <a class="project column" href="/solitaire" draggable="false" target="_blank">
-                    <h2>Solitaire</h2>
-                    <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
-                    <!-- <p>&nbsp;</p> -->
-                </a>
-                <a class="project column" href="/chess" draggable="false" target="_blank">
-                    <h2>Chess</h2>
-                    <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
-                </a>
-		        <a class="project column" href="/text-code" draggable="false" target="_blank">
-                    <h2>Text Code</h2>
-                    <p>(Still in early development) Text code is a simple project that i created to make writing basic code as easy/readable as possible. </p>
-                </a>
-            </div>
-            <article class="container-main column" id="about-me">
+        <main style="justify-content: center; align-items: center; gap: 20px;" class="flex column">
+            <div id="about-me"></div>
+            <article class="container-main column" style="width: 100%;">
                 <h1 class="fill">About me</h1>
                 <p style="font-size: 1.4rem;">
                     Hi, my name is Evan I am a 
-                    <span id="e-age">00</span> 
+                    <span class="e-age">00</span> 
                     year old programmer from 
                     <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
                 </p>
@@ -79,9 +61,33 @@
                     
                 </ul>
             </article>
-            <div style="width: 100%; max-width: 522px;" class="container-main column">
-                <form class="form-control" action="https://formsubmit.co/lintonevan@gmail.com" method="POST">
-                    <h1 id="contact">Contact me</h1>
+            <div id="projects"></div>
+            <div class="container-main column">
+                <div class="fill"><h1>My Projects</h1></div>
+                <div class="fill flex row wrap" style="gap: 20px; justify-content: center; padding: 20px;">
+                    <a class="project column" href="/drawing-app" draggable="false" target="_blank">
+                        <h2>Drawing app</h2>
+                        <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
+                    </a>
+                    <a class="project column" href="/solitaire" draggable="false" target="_blank">
+                        <h2>Solitaire</h2>
+                        <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
+                        <!-- <p>&nbsp;</p> -->
+                    </a>
+                    <a class="project column" href="/chess" draggable="false" target="_blank">
+                        <h2>Chess</h2>
+                        <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
+                    </a>
+                    <a class="project column" href="/text-code" draggable="false" target="_blank">
+                        <h2>Text Code</h2>
+                        <p>(Still in early development) Text code is a simple project that i created to make writing basic code as easy/readable as possible. </p>
+                    </a>
+                </div>
+            </div>
+            <div id="contact"></div>
+            <div style="width: 100%;" class="container-main column">
+                <form class="form-control" style="width: 100%   ;" action="https://formsubmit.co/lintonevan@gmail.com" method="POST">
+                    <h1>Contact me</h1>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input id="name" type="text" name="name" required>
@@ -102,5 +108,34 @@
                 </form>
             </div> 
         </main>
+        <footer style="margin-top: 120px;">
+            <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; color: #fff; padding: 20px;">
+                <div style="width: 100%; display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
+                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                        <h3 style="margin-bottom: 10px; font-size: 2rem;">About Me</h3>
+                        <p style="font-size: 1.4rem;">
+                            Hi, my name is Evan I am a 
+                            <span class="e-age">00</span> 
+                            year old programmer from    
+                            <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
+                        </p>
+                    </div>
+                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                        <h3 style="margin-bottom: 10px; font-size: 2rem;">Page Links</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li class="main-header-list-item"><a class="styled-link" href="./index.html">Home</a></li>
+                            <li class="main-header-list-item"><a class="styled-link" href="#projects">Projects</a></li>
+                            <li class="main-header-list-item"><a class="styled-link" href="#about-me">About</a></li>
+                            <li class="main-header-list-item"><a class="styled-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                        <h3 style="margin-bottom: 10px; font-size: 2rem;">Contact Me</h3>
+                        <p>Email: <a class="styled-link" href = "mailto: lintonevan@gmail.com">lintonevan@gmail.com</a></p>
+                        <!-- <p >Phone: <a class="styled-link" href="tel:123456789">Phone</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

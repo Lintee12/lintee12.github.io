@@ -10,5 +10,7 @@ function getAge() {
 
 window.onload = () => {
     console.log(`I am ${getAge().age} and was born at approximately ${getAge().birthdate}`);
-    document.getElementById('e-age').innerText = getAge().age;
+    document.querySelectorAll('.e-age').forEach(element => {
+        element.innerText = getAge().age;
+    });
 }
