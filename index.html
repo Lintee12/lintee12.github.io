@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme-item" lang="en" style="scroll-behavior: smooth;">
+<html class="theme-item" lang="en" style="scroll-behavior: smooth;" data-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,24 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
         <link rel="stylesheet" type="text/css" href="bin/css/styles.css">
         <script src="bin/js/main.js"></script>
+        <style>
+            .alert {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: var(--accent);
+                color: white;
+                padding: 20px;
+                font-size: 1.2rem;
+                border-radius: 16px;
+                user-select: none;
+            }
+
+            .alert svg {
+                min-width: 28px;
+                min-height: 28px;
+            }
+        </style>
     </head>
     <body style="scroll-behavior: smooth;">
         <div class="control-wrapper" style="display: flex; flex-direction: column;">
@@ -70,6 +88,13 @@
                     </nav>
                 </div>
             </header>
+            <div title="alert" class="alert theme-style-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                </svg>
+                <span class="alert-title">Colors and UI layout are still a work in progress...</span>
+            </div>
             <main style="justify-content: center; align-items: center; gap: 20px;" class="flex column">
                 <div id="about-me"></div>
                 <article class="container-main column" style="width: 100%;">
@@ -149,12 +174,12 @@
                             <label for="message">Message</label>
                             <textarea style="min-height: 180px; height: 237px; max-height: 237px;" id="message" name="message" minlength="32" required></textarea>
                         </div>
-                        <button class="theme-style-bg" style="margin-top: auto;" type="submit">Send</button>
+                        <button class="theme-style-bg" style="margin-top: auto; color: white;" type="submit">Send</button>
                     </form>
                 </div> 
             </main>
             <footer style="margin-top: 50px;">
-                <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; color: #fff; padding: 20px;">
+                <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; padding: 20px;">
                     <div style="width: 100%; display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
                         <div style="width: fit-content; max-width: 300px; margin-right: auto;">
                             <h3 style="margin-bottom: 10px; font-size: 2rem;">About Me</h3>
