@@ -279,7 +279,8 @@ p {
 }
 
 .expand-menu {
-    position: fixed;
+    position: absolute;
+    display: block;
     top: 68px;
     left: 20px;
     width: calc(100% - 40px);

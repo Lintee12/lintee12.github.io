@@ -31,13 +31,13 @@ function toggleMenu() {
     const menu = document.querySelector('.expand-menu');
     const overlay = document.querySelector('.overlay');
 
-    if(menu.style.display === 'flex') {
+    if(menu.style.display === 'block') {
         menu.style.display = 'none';
         overlay.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
     else {
-        menu.style.display = 'flex';
+        menu.style.display = 'block';
         overlay.style.display = 'block';
         document.body.style.overflow = 'hidden';
     }
