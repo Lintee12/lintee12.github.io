@@ -82,5 +82,6 @@ function applyTheme(theme) {
     else if(theme === 'light') {
         document.querySelector('html').dataset.theme = 'light';
     }
+    document.getElementById('mobile-theme-color').setAttribute('content', getComputedStyle(document.body).backgroundColor);
 }
 

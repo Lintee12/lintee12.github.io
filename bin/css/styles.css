@@ -1,13 +1,17 @@
 :root[data-theme="light"] {
     --text: rgb(0, 0, 0);
-    --background: rgb(230, 230, 230);
+    --background: rgb(245, 245, 245);
+    --background-secondary: rgb(255, 255, 255);
+    --background-input: rgb(196, 196, 196);
     --primary: rgb(163, 0, 128);
     --secondary: rgb(50, 35, 182);
     --accent: #7488ff;
   }
   :root[data-theme="dark"] {
     --text: rgb(255, 255, 255);
-    --background: rgb(26, 26, 26);
+    --background: rgb(43, 43, 43);
+    --background-secondary: rgba(0, 0, 0, 0.2);
+    --background-input: rgba(58, 58, 58, 0.8);
     --primary: rgb(255, 92, 220);
     --secondary: rgb(50, 35, 182);
     --accent: #7488ff;
@@ -85,14 +89,14 @@ p {
     gap: 20px;
     width: fill;
     border-radius: 16px;
-    background-color: rgba(110, 110, 110, 0.123);
+    background-color: var(--background-secondary);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.61);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 1);
     padding: 10px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .flex {
@@ -191,9 +195,8 @@ p {
 }
 
 .form-group input {
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: var(--background-input);
     font-size: 1.6rem;
-    color: rgb(255, 255, 255);
     width: 100%;
     height: 40px;
     border: 0;
@@ -202,7 +205,6 @@ p {
     padding: 15px 5px;
     transition: border 0.4s;
     border: 2px solid transparent;
-    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -213,9 +215,8 @@ p {
 
 .form-group textarea {
     resize: vertical;
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: var(--background-input);
     font-size: 1.6rem;
-    color: rgb(255, 255, 255);
     width: 100%;
     height: 100px;
     border: 0;
@@ -224,7 +225,6 @@ p {
     padding: 5px;
     transition: border 0.4s;
     border: 2px solid transparent;
-    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
