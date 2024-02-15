@@ -32,14 +32,39 @@ function toggleMenu() {
     const overlay = document.querySelector('.overlay');
 
     if(menu.style.display === 'block') {
-        menu.style.display = 'none';
-        overlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
+        let temp = 1;
+        function decreaseOpacity() {
+            setTimeout(() => {
+                temp -= 0.1;
+                menu.style.opacity = temp;
+                if (temp > 0) {
+                    decreaseOpacity();
+                }
+                if(temp <= 0) {
+                    menu.style.display = 'none';
+                    overlay.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }, 10);
+        }
+        decreaseOpacity();
     }
     else {
         menu.style.display = 'block';
         overlay.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        menu.style.opacity = 0;
+        let temp = 0;
+        function increaseOpacity() {
+            setTimeout(() => {
+                temp += 0.1;
+                menu.style.opacity = temp;
+                if (temp < 1) {
+                    increaseOpacity();
+                }
+            }, 10);
+        }
+        increaseOpacity();
     }
 }
 

@@ -1,11 +1,11 @@
 :root[data-theme="light"] {
-    --text: rgb(0, 0, 0);
+    --text: rgb(30, 30, 30);
     --background: rgb(245, 245, 245);
     --background-secondary: rgb(255, 255, 255);
     --background-input: rgb(196, 196, 196);
     --primary: rgb(163, 0, 128);
     --secondary: rgb(50, 35, 182);
-    --accent: #7488ff;
+    --accent: #516bff;
   }
   :root[data-theme="dark"] {
     --text: rgb(255, 255, 255);
@@ -39,6 +39,8 @@ body {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
+    line-height: 130%;
+    letter-spacing: -1.2px;
 }
 
 body {
@@ -142,11 +144,10 @@ p {
 }
 
 .project:hover {
-    transform: translateY(-10px);
-    filter: drop-shadow(0px 40px 25px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 50px rgba(15,6,23,1));
-    scale: 1.05;
-    border: 2px solid rgb(70, 48, 105);
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 2px 5px rgba(15,6,23,1));
+    scale: 1.01;
+    border: 2px solid var(--secondary);
 }
 
 .project:active {
@@ -206,6 +207,7 @@ p {
     transition: border 0.4s;
     border: 2px solid transparent;
     backdrop-filter: blur(10px);
+    font-family: sans-serif;
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -226,6 +228,7 @@ p {
     transition: border 0.4s;
     border: 2px solid transparent;
     backdrop-filter: blur(10px);
+    font-family: sans-serif;
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -288,6 +291,7 @@ p {
     color: #fff;
     padding: 10px 0;
     z-index: 1000;
+    min-height: 239.5px;
 }
 
 .overlay {
