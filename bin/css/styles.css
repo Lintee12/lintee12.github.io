@@ -2,7 +2,7 @@
     --text: rgb(30, 30, 30);
     --background: rgb(245, 245, 245);
     --background-secondary: rgb(255, 255, 255);
-    --background-input: rgb(196, 196, 196);
+    --background-input: rgba(0, 0, 0, 0.212);
     --primary: rgb(163, 0, 128);
     --secondary: rgb(50, 35, 182);
     --accent: #516bff;
@@ -48,10 +48,9 @@ body {
     margin: 20px 100px;
     background: var(--background);
     border-radius: 16px !important;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: blur(9.1px) !important;
-    -webkit-backdrop-filter: blur(9.1px) !important;
-    border: 1px solid rgba(0, 0, 0, 1) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 h1 {
@@ -63,7 +62,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .main-header-nav {
@@ -93,9 +92,8 @@ p {
     border-radius: 16px;
     background-color: var(--background-secondary);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.61);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 1);
     padding: 10px;
     width: 100%;
     max-width: 1000px;
@@ -307,6 +305,29 @@ p {
 
 .hidden {
     display: none !important;
+}
+
+.alert {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-v2 {
+    padding: 10px;
+    border-radius: 16px;
+    min-height: 150px;
+    transition: all 0.2s;
+}
+
+.project-v2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+    scale: 1.01;
+}
+
+.project-v2:active {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
 }
 
 @media all and (min-width: 1900px) {

@@ -41,7 +41,7 @@
     </head>
     <body style="scroll-behavior: smooth;">
         <div class="control-wrapper" style="display: flex; flex-direction: column;">
-            <header>
+            <header class="scroll-fade">
                 <nav class="main-header-nav">
                     <ul class="main-header-list" style="width: 100%;">
                         <li class="main-header-list-item" style="margin-right: auto;"><a href="./index.html">Home</a></li>
@@ -95,7 +95,7 @@
                     </nav>
                 </div>
             </header>
-            <div title="alert" class="alert theme-style-bg">
+            <div title="alert" class="alert theme-style-bg scroll-fade">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                     <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -104,11 +104,11 @@
             </div>
             <main style="justify-content: center; align-items: center; gap: 20px;" class="flex column">
                 <div id="about-me"></div>
-                <article class="container-main column" style="width: 100%;">
+                <article class="container-main column scroll-fade" style="width: 100%;">
                     <h1 class="fill">About me</h1>
                     <p style="font-size: 1.4rem;">
                         Hi, my name is Evan I am a 
-                        <span class="e-age">00</span> 
+                        <span class="e-age">19</span> 
                         year old programmer from 
                         <a class="styled-link" href="https://www.thecanadianencyclopedia.ca/en/timeline/new-brunswick">New Brunswick Canada</a>.
                     </p>
@@ -141,31 +141,60 @@
                 <div class="container-main column">
                     <div class="fill"><h1>My Projects</h1></div>
                     <div class="fill flex row wrap" style="gap: 20px; justify-content: center; padding: 20px;">
-                        <a class="project column theme-style-bg" href="/drawing-app" draggable="false" target="_blank">
+                        <!-- <a class="project column theme-style-bg scroll-fade" href="/drawing-app" draggable="false" target="_blank">
                             <h2>Drawing app</h2>
                             <p>This is a minimalistic drawing app with some basic features that allow you to make a wide range of different artistic creations.</p>
-                        </a>
-                        <a class="project column theme-style-bg" href="/solitaire" draggable="false" target="_blank">
+                        </a> -->
+                        <div class="project-v2 container-main scroll-fade">
+                            <a class="project-v2-link" href="/drawing-app" draggable="false" target="_blank">
+                                <h2>Drawing app</h2>
+                                <p>A fully working drawing app, it has a lot of basic features you would expect from a drawing app, and its good for quick drawings if you need to. (made using html5 canvas and js)</p>
+                            </a>
+                        </div>
+                        <!-- <a class="project column theme-style-bg scroll-fade" href="/solitaire" draggable="false" target="_blank">
                             <h2>Solitaire</h2>
                             <p>Just a basic solitaire game... also currently one of my favorite projects.</p>
-                            <!-- <p>&nbsp;</p> -->
-                        </a>
-                        <a class="project column theme-style-bg" href="/chess" draggable="false" target="_blank">
+                        </a> -->
+                        <div class="project-v2 container-main scroll-fade">
+                            <a class="project-v2-link" href="/solitaire" draggable="false" target="_blank">
+                                <h2>Solitaire</h2>
+                                <p>Another solitaire clone, but it was very fun to make, and who doenst love a game of solitaire? (made with html5 and js)</p>
+                            </a>
+                        </div>
+                        <!-- <a class="project column theme-style-bg scroll-fade" href="/chess" draggable="false" target="_blank">
                             <h2>Chess</h2>
                             <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
-                        </a>
-                        <a class="project column theme-style-bg" href="/text-code" draggable="false" target="_blank">
+                        </a> -->
+                        <div class="project-v2 container-main scroll-fade" style="display: none;">
+                            <a class="project-v2-link" href="/chess" draggable="false" target="_blank">
+                                <h2>Chess</h2>
+                                <p>This ons is still an early work in progress, im currently working on a way to validate the possible moves a piece can make.</p>
+                            </a>
+                        </div>
+                        <!-- <a class="project column theme-style-bg scroll-fade" href="/text-code" draggable="false" target="_blank">
                             <h2>Text Code</h2>
                             <p>(Still in early development) Text code is a simple project that i created to make writing basic code as easy/readable as possible. </p>
-                        </a>
-                        <a class="project column theme-style-bg" href="/scroll-fade" draggable="false" target="_blank">
+                        </a> -->
+                        <div class="project-v2 container-main scroll-fade">
+                            <a class="project-v2-link" href="/text-code" draggable="false" target="_blank">
+                                <h2>Text Code</h2>
+                                <p>This projects not even close to done(its not evenworking at all), but i think this one could turn out pretty cool... the idea is to make a "programming language" that is as close to englsih as it can get. (made with html5 and js)</p>
+                            </a>
+                        </div>
+                        <!-- <a class="project column theme-style-bg scroll-fade" href="/scroll-fade" draggable="false" target="_blank">
                             <h2>Scroll Fade</h2>
                             <p>Not like this hasnt done before but its still a pretty cool thing to do.</p>
-                        </a>
+                        </a> -->
+                        <div class="project-v2 container-main scroll-fade">
+                            <a class="project-v2-link" href="/scroll-fade" draggable="false" target="_blank">
+                                <h2>Scroll Fade</h2>
+                                <p>Scroll Fade is just a simple javascript package for having elements fade in on scroll...Its not like it hasnt been done before but im planning on expanding it more in the future. (made with js)</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div id="contact"></div>
-                <div style="width: 100%;" class="container-main column">
+                <div style="width: 100%;" class="container-main column scroll-fade">
                     <form class="form-control" style="width: 100%;" action="https://formsubmit.co/lintonevan@gmail.com" method="POST">
                         <h1>Contact me</h1>
                         <div class="form-group">
@@ -189,13 +218,13 @@
                 </div> 
             </main>
             <footer style="margin-top: 50px;">
-                <div class="container-main" style="margin: 0 auto;  width: 100%; min-width: 100%; padding: 20px;">
+                <div class="container-main scroll-fade" style="margin: 0 auto; padding: 20px;">
                     <div style="width: 100%; display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
                         <div style="width: fit-content; max-width: 300px; margin-right: auto;">
                             <h3 style="margin-bottom: 10px; font-size: 2rem;">About Me</h3>
                             <p style="font-size: 1.4rem;">
                                 Hi, my name is Evan I am a 
-                                <span class="e-age">00</span> 
+                                <span class="e-age">19</span> 
                                 year old programmer from Canada
                             </p>
                         </div>
@@ -231,5 +260,6 @@
                 toggleMenu();
             })
         </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lintee12/scroll-fade@latest/bin/js/scrollFade.js"></script>
     </body>
 </html>
